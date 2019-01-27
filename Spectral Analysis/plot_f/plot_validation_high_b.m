@@ -22,7 +22,7 @@ if (1)
         
         for c_case = 1:numel(ampl)
             
-            load res_MC_par_1e6_harmonic_3_50.mat
+            load res_MC_par_1e6_harmonic_3_50_1e-5.mat
             
             mc_dt = mss.ac.dt;
             mc_phi = phi_all;

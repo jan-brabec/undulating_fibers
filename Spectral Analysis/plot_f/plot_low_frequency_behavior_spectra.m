@@ -26,9 +26,7 @@ if (1)
     a = gamrnd(9.6624,1.8962e-07,1,n_samples*1e2)+1e-6;
     T = gamrnd(6.0020,6.7396e-06,1,n_samples*1e2)+10e-6;
     
-%     a = gamrnd(2.4015,7.9895e-07,1,n_samples*1e2)+1e-6;
-%     T = gamrnd(1.2419,4.1495e-05,1,n_samples*1e2)+10e-6;
-%     
+
     a = a(a>1e-6 & a<3e-6); %restrict to what we have tested
     T = T(T>10e-6 & T<50e-6);
     
