@@ -1,5 +1,4 @@
 Analytical prediction of restricted diffusion.
-Author: Jan Brabec
 
 Run Analytical.m
 
