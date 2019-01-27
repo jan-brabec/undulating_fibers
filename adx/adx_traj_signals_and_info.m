@@ -1,3 +1,5 @@
+addpath('../Spectral Analysis/SA_functions')
+
 
 for c_case = 1:15
     switch c_case
