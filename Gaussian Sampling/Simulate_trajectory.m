@@ -5,15 +5,13 @@ addpath('GS_trajectories')
 addpath('GS_functions')
 
 
-load GS_trajectories/res_stoch_b4.mat
+load GS_trajectories/1_10_20000.mat
 clearvars -except a T G_xy cind dl
-
-info = 'running b4 on dt = 1e-5 to see if the prediction is better, because it is quite off now, dd = 1e-7, t_max = 10 s';
 
 
 if (1)
     %time
-    t_max = 10;
+    t_max = 1; %t_max = 1 s for harmonic, = 10 s for stochastic
     dt = 1e-4; %1e-5 best, dt = 1e-4 ok
     t = linspace(0, t_max,round(t_max/dt)+1);
     [f,~] = f_gen_freq_from_time(t,dt);
