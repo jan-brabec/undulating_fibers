@@ -52,7 +52,7 @@ for c_case = 1:15
     y = G_xy(:,2);
     
     [~, mmuOD(c_case)] = sa_muOD(x,y);
-    f_delta_pred_1_harm(c_case) = sa_pred_f_delta_1_harm_muOD(D0,a,T);
+    f_delta_pred_1_harm(c_case) = sa_pred_f_delta_1_harm(D0,a,T);
     
     grads = f_gen_grad_pulse(gs_t, xps.t0, xps.mde_delta1, xps.mde_capital_delta1, xps.g);
         

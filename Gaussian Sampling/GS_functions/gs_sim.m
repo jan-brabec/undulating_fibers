@@ -50,7 +50,7 @@ for c = cind %step along the trajectory
         d_omega_by_step_full = sa_put_d_omega2zero(d_omega_by_step_full,f);
         d_omega_by_step(:,n) = d_omega_by_step_full(1:ds:end);
         
-        save tmp.mat
+        save tmp.mat %large time to do
     end
 
     fprintf('%d out of %d, ind = %d \n',n,numel(cind),c);

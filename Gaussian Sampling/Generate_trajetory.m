@@ -67,7 +67,7 @@ if (0) %harmonic to make it nice
 
 else %also stochastic
     ind_1_rev = round(pnts*T/x(end));
-    turns = 30;
+    turns = 30; %Choose computed indices to be 30
     cind = round(pnts/2 - ind_1_rev*turns/2) : round(pnts/2 + ind_1_rev*turns/2);
     
 end
@@ -77,21 +77,3 @@ plot(G_xy(:,1),G_xy(:,2),'Linewidth',2,'Color','blue')
 hold on
 plot(G_xy(cind,1),G_xy(cind,2),'Linewidth',2,'Color','red')
 axis equal
-
-% 
-% 
-% load res_stoch_2_longer_time_lower_dt_until_10s.mat
-% clf
-% 
-% plot(G_xy(:,1),G_xy(:,2),'Linewidth',2)
-% axis equal
-% hold on
-% plot(G_xy(cind,1),G_xy(cind,2),'Linewidth',2)
-% 
-% middle = max(G_xy(:,1))/2-0.0008
-% 
-% 
-% load ../GS_trajectories/1_50_20000.mat
-% plot(G_xy(:,1)+middle,G_xy(:,2),'Linewidth',2,'Color','green')
-% 
-% 

@@ -14,7 +14,7 @@ info = 'running b4 on dt = 1e-5 to see if the prediction is better, because it i
 if (1)
     %time
     t_max = 10;
-    dt = 1e-5; %1e-5 best
+    dt = 1e-4; %1e-5 best, dt = 1e-4 ok
     t = linspace(0, t_max,round(t_max/dt)+1);
     [f,~] = f_gen_freq_from_time(t,dt);
     
@@ -25,7 +25,7 @@ if (1)
     D0 = 1.7e-9;
     
     msd = gs_sim(t,D0,y_act,cind,dl,'parallel_yes',0,dt,f);
-    save b4_but_dt_1e-5.mat
+    save tmp.mat
 
 end
 

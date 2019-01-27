@@ -18,10 +18,10 @@ for aj = 1:2
                 end
                 
                 
-%                 if wavelength(i) ~= 30e-6 && wavelength(i) ~= 10e-6
-%                     col = pl_color('1-harm');
-%                     plot(amplitude(i)*1e6, d_est(i)*1e6,'.','MarkerSize', marker_size,'Color',col,'HandleVisibility','off');
-%                 end
+                if wavelength(i) ~= 30e-6 && wavelength(i) ~= 10e-6
+                    col = pl_color('1-harm');
+                    plot(amplitude(i)*1e6, d_est(i)*1e6,'.','MarkerSize', marker_size,'Color',col,'HandleVisibility','off');
+                end
                 
                 if wavelength(i) == 10e-6
                     col = pl_color('cyl_fit');
@@ -68,7 +68,7 @@ for aj = 1:2
                     
                 end
                 
-                title(f_delta_pred_1_harm(i))
+%                 title(f_delta_pred_1_harm(i))
                 hold on
                 xlabel('Predicted {\itd} = {\itk} \cdot {\ita} \cdot μOD^{-1/4} [μm]')
                 
@@ -78,7 +78,7 @@ for aj = 1:2
                     'Location','southeast');
                 xticks([0,4,8,12,16])
                 xlim([0 16])
-                pause
+%                 pause
             end
     end
     

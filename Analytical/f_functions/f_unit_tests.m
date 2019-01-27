@@ -25,18 +25,19 @@ switch (c_ut)
         %  The impact of gradient waveform and orientation dispersion."
         %  NMR in Biomedicine 30.7 (2017): e3711.
         
+
         d_res_limit  = 3e-6;
-        D0_res_limit = 2.0e-9;
+        D0_res_limit = 2e-9;
         
-        addpath('../Monte Carlo/MC_functions')
-        f_max = 5e4; df = 1;
+        addpath('../../Monte Carlo/MC_functions')
+        f_max = 5e3; df = 1;
         [f, ~] = MC_get_f_from_df_f_max(f_max,df);
-        
         d_omega_cyl_res_limit = f_dips_from_r(d_res_limit/2, 2, D0_res_limit, f);
         
         if abs(d_omega_cyl_res_limit(find(f==500))/D0_res_limit - 0.45) > 0.02
             error('f_dips_from_r does not work')
         end
+        
 end
 
 end

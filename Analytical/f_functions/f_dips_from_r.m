@@ -1,7 +1,7 @@
 function D_w = f_dips_from_r(r,shape, D_0, w)
 % function D_w = f_dips_from_r(r,shape, D_0, w)
 %
-% Calculates diffussion spectrum D(w) for a plane, cylinder or a sphere of radii r.
+% Calculates diffussion spectrum D(w) for a sphere of radii r.
 
 %Assumes that yeasts can be considered as spherically shaped, interconnected,
 %permeable or partially opened pores.
@@ -20,20 +20,15 @@ function D_w = f_dips_from_r(r,shape, D_0, w)
 %Stepisnik 1992: Time-dependent self-diffusion by NMR spin-echo
 %http://dx.doi.org/10.1016/0921-4526(93)90124-O
 
-d=shape;
-
+d = shape;
 equation=@(zeta) zeta.*besselj(d/2-1,zeta)-(d-1)*besselj(d/2,zeta);
-%fplot(equation, [58000 60000]);
 zeros_wanted=200;
 zetas_k = f_find_zeros(equation,zeros_wanted);
 
 a_k = (zetas_k/r).^2;
 B_k = (2*(r./zetas_k).^2)  ./  (zetas_k.^2+1-d);
 
-
-precision = eps;
-summa=f_sum_numerically(zetas_k,a_k,B_k,w,D_0);
-
+summa = f_sum_numerically(a_k,B_k,w,D_0);
 
 D_w = D_0 * summa; %only intracelular part, "alpha=0"
 

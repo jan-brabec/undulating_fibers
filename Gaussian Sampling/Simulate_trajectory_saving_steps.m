@@ -15,7 +15,7 @@ info = 'running b1 but on dt = 1e-5, dd = 1e-7, t_max = 10 s for 60 revolutions 
 if (1)
     %time
     t_max = 10;
-    dt = 1e-5; %1e-5 best for final figures
+    dt = 1e-4; %1e-5 best, 1e-4 ok
     t = linspace(0, t_max,round(t_max/dt)+1);
     [f,df] = f_gen_freq_from_time(t,dt);
     
