@@ -30,10 +30,12 @@ for c_case=1:4
             
         case 3
             load res_MC_3_10_spectrum.mat
-            load res_MC_3_10_signal.mat
+            load res_MC_3_10_signal_1.mat
+            load res_MC_3_10_signal_2.mat
         case 4
             load res_MC_3_10_spectrum.mat
-            load res_MC_3_10_signal.mat
+            load res_MC_3_10_signal_1.mat
+            load res_MC_3_10_signal_2.mat
     end
     
     mc_spectra = sa_put_d_omega2zero(ft_ac_merged(:,2),f);
