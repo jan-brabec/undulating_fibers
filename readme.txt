@@ -8,4 +8,4 @@ Contains 5 main branches:
 4) Spectral Analysis: Spectral analysis toolkit that contains also plot functions used in the manuscript
 5) adx: ActiveAx implementation (main contributor: Markus Nilsson)
 
-It made public to offer tools to simulate own 1D pathways, to replot figures from the manuscript and made available for verification purposes.
+It is available to offer a tool to simulate own 1D pathways, to replot figures from the manuscript and to potentially verify the code.
