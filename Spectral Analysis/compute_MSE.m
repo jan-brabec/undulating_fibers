@@ -17,10 +17,10 @@ g_struc.t0       = [0 ,  0,  0,  0];
 g_struc.a        = [58, 46, 57, 60]*1e-3;
 
 
-type = 'stoch';
+type = 'cyl';
 switch type
     case 'cyl'
-        r = 20e-6;
+        r = 10e-6;
         
         gs_f = linspace(-5000,5000,1e5+1);
         gs_df = gs_f(2) - gs_f(1);
