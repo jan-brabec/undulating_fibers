@@ -1,5 +1,5 @@
 # Undulating structures
-Supplementary code to the article: "Time-dependent diffusion in undulating structures: Impact on axon diameter estimation"
+Supplementary code to the manuscript: "Time-dependent diffusion in undulating structures: Impact on axon diameter estimation"
 
 Contains 5 main branches:
 1) Analytical: Analytical predictions
