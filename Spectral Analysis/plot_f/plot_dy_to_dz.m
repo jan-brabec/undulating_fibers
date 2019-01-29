@@ -96,8 +96,8 @@ yticks([0  0.3  0.6])
 xticks([0  0.3  0.6])
 
 
-ylabel('<dy^2 / dz^2>')
-xlabel('<|dy|>^2 / <|dz|>^2')
+ylabel('<dy^2 / d{\itl}^2>')
+xlabel('<|dy|>^2 / <|d{\itl}|>^2')
 
 plot_set_1x3;
 
