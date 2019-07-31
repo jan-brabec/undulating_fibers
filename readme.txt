@@ -3,7 +3,7 @@ Supplementary code to the manuscript: "Time-dependent diffusion in undulating st
 
 This is the version after revision, see the code after initial submission in releases.
 
-Contains 5 main branches:
+Contains 6 main branches:
 1) Analytical: Analytical predictions
 2) Monte Carlo: Monte Carlo simulator of 1D-pathways
 3) Gaussian Sampling: Gaussian sampling simulator of 1D-pathways
