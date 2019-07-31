@@ -25,14 +25,14 @@ plot(cyl_f,cyl_d_omega*1e9,'-','Linewidth',14,'Color',pl_color('cyl')) %[0.7529 
 hold on;
 plot(cyl_f,sa_lorentz1(D_hi,f_delta,cyl_f)*1e9,'-.','Linewidth',14,'Color',pl_color('cyl_fit'));
 
-yticks([0 0.5 1 1.5])
+yticks([0 0.85 1.7])
 xticks([0 50 100 150])
 
 xlim([0 150])
-ylim([0 1.6])
+ylim([0 2.25])
 
-xlabel('{\itf} [Hz]')
-ylabel('D({\itf}) [μm^2/ms]')
+xlabel('{\itf}')
+ylabel('D({\itf})')
 
 
 plot_set_4x2_separate;
@@ -47,12 +47,12 @@ loglog(cyl_f,cyl_d_omega*1e9,'-','Linewidth',16,'Color',pl_color('cyl'))
 hold on
 loglog(cyl_f,sa_lorentz1(D_hi,f_delta,cyl_f)*1e9,'-.','Linewidth',16,'Color',pl_color('cyl_fit'));
 
-xlabel('log {\itf} [Hz]')
-ylabel('log D({\itf}) [μm^2/ms]')
+xlabel('log {\itf}')
+ylabel('log D({\itf})')
 
 xticks([10^0 10^1 10^2])
 xlim([10^0 10^2])
-ylim([10^-2 1.6])
+ylim([10^-2 1.7])
 
 plot_set_4x2_separate;
 legend off;
@@ -81,8 +81,8 @@ ylim([0 0.2])
 yticks([0 0.1 0.2])
 xticks([0 50 100 150])
 
-% xlabel('{\itf} [Hz]')
-% ylabel('D({\itf}) [μm^2/ms]')
+xlabel('{\itf} [Hz]')
+ylabel('D({\itf}) [�m^2/ms]')
 
 
 plot_set_4x2_separate;
@@ -98,8 +98,8 @@ loglog(one_harm_f,sa_lorentz1(D_hi,f_delta,one_harm_f)*1e9,'-.','Linewidth',16,'
 
 xticks([10^0 10^1 10^2])
 
-% xlabel('log {\itf} [Hz]')
-% ylabel('log D({\itf}) [μm^2/ms]')
+xlabel('log {\itf} [Hz]')
+ylabel('log D({\itf}) [�m^2/ms]')
 
 xlim([10^0 10^2])
 ylim([10^-2 0.15])
@@ -152,8 +152,8 @@ plot(n_harm_f,sa_lorentz1(D_hi,f_delta,n_harm_f)*1e9,'-.','Linewidth',16,'Color'
 xlim([0 150])
 ylim([0 0.2])
 
-% xlabel('{\itf} [Hz]')
-% ylabel('D({\itf}) [μm^2/ms]')
+xlabel('{\itf}')
+ylabel('D({\itf})')
 
 yticks([0 0.1 0.2])
 xticks([0 50 100 150])
@@ -170,8 +170,10 @@ loglog(n_harm_f,n_harm_d_omega*1e9,'Linewidth',16,'Color',pl_color('n-harm'))
 hold on
 loglog(n_harm_f,sa_lorentz1(D_hi,f_delta,n_harm_f)*1e9,'-.','Linewidth',16,'Color',pl_color('n-harm_fit'));
 
-% xlabel('log {\itf} [Hz]')
-% ylabel('log D({\itf}) [μm^2/ms]')
+xlabel('log {\itf}')
+ylabel('log D({\itf})')
+
+
 xticks([10^0 10^1 10^2])
 
 xlim([10^0 10^2])
@@ -207,8 +209,8 @@ ylim([0 0.2])
 yticks([0 0.1 0.2])
 xticks([0 50 100 150])
 
-% xlabel('{\itf} [Hz]')
-% ylabel('D({\itf}) [μm^2/ms]')
+xlabel('{\itf}')
+ylabel('D({\itf})')
 
 
 plot_set_4x2_separate;
@@ -226,8 +228,8 @@ hold on
 loglog(stoch_f,sa_lorentz1(D_hi,f_delta,stoch_f)*1e9,'-.','Linewidth',16,'Color',pl_color('stoch_fit'));
 
 
-% xlabel('log {\itf} [Hz]')
-% ylabel('log D({\itf}) [μm^2/ms]')
+xlabel('log {\itf}')
+ylabel('log D({\itf})')
 xticks([10^0 10^1 10^2])
 
 

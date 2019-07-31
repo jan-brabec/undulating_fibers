@@ -17,7 +17,7 @@ for aj = 1:2
                     hold on
                 end
                 
-                
+%                 
                 if wavelength(i) ~= 30e-6 && wavelength(i) ~= 10e-6
                     col = pl_color('1-harm');
                     plot(amplitude(i)*1e6, d_est(i)*1e6,'.','MarkerSize', marker_size,'Color',col,'HandleVisibility','off');
@@ -37,12 +37,12 @@ for aj = 1:2
                 
                 
                 hold on
-                xlabel('{\ita} [Î¼m]')
+                xlabel('amplitude {\ita} [µm]')
                 plot_set_2x2;
                 xlim([0.5 3.5])
                 xticks([1,2,3])
                 
-                legend('{\it\lambda} = 20, 40, 50 Î¼m','{\it\lambda} = 10 Î¼m','{\it\lambda} = 30 Î¼m','Location','southeast')
+                legend('{\it\lambda} = 20, 40, 50 µm','{\it\lambda} = 10 µm','{\it\lambda} = 30 µm','Location','southeast')
 % legend off
                 
             end
@@ -56,11 +56,11 @@ for aj = 1:2
             for i=1:numel(mmuOD)
                 if i == 1
                     col = pl_color('1-harm');
-                    plot(d_pred(i)*1e6, d_est(i)*1e6,'p','MarkerSize',18,'MarkerEdgeColor',col, 'MarkerFaceColor',col);
+                    plot(d_pred(i)*1e6, d_est(i)*1e6,'^','MarkerSize',18,'MarkerEdgeColor',col, 'MarkerFaceColor',col);
                     
                 elseif i == 5
                     col = pl_color('1-harm');
-                    plot(d_pred(i)*1e6, d_est(i)*1e6,'s','MarkerSize', 16,'MarkerEdgeColor',col, 'MarkerFaceColor',col);
+                    plot(d_pred(i)*1e6, d_est(i)*1e6,'v','MarkerSize', 16,'MarkerEdgeColor',col, 'MarkerFaceColor',col);
                     
                 else
                     col = pl_color('1-harm');
@@ -70,7 +70,7 @@ for aj = 1:2
                 
 %                 title(f_delta_pred_1_harm(i))
                 hold on
-                xlabel('Predicted {\itd} = {\itk} \cdot {\ita} \cdot Î¼OD^{-1/4} [Î¼m]')
+                xlabel('Predicted diameter {\itd} ') %= {\itk} \cdot {\ita} \cdot µOD^{-1/4} [µm]
                 
                 plot_set_2x2;
                 legend('{\itf_{\Delta}} = 92 Hz; panel C',...
@@ -87,7 +87,7 @@ for aj = 1:2
     
     
     yticks([0,4,8,12,16])
-    ylabel('Estimated {\itd} [Î¼m] ')
+    ylabel('Estimated diameter {\itd} [µm] ')
     ylim([0 16])
     
     % ax.XColor = '[0.5 0.5 0.5]'; % Red

@@ -1,9 +1,9 @@
 clf
 addpath('../res')
 addpath('../SA_functions')
+addpath('plotSpread')
 
-
-for c_rep=1:15 %harmonic
+for c_rep=1 : 15 %harmonic
     
     switch c_rep
         case 1
@@ -123,14 +123,12 @@ if(1)
         p_l_stoch(c_rep) = sa_fit_p(d_omega,f,min_hz_l,max_hz_l,min_d_omega_l,max_d_omega_l);
         
         %fit lower freq.
-        min_hz_h = 0.001; %absolute freq.
+        min_hz_h = 1; %absolute freq.
         max_hz_h = 20;
         min_d_omega_h = 0; %relative to D_hi
         max_d_omega_h = 0.5;
         
         p_h_stoch(c_rep) = sa_fit_p(d_omega,f,min_hz_h,max_hz_h,min_d_omega_h,max_d_omega_h);
-        
-        
         
         
         if (0) %debug
@@ -158,42 +156,20 @@ if(1)
     end
 end
 
+% figure
+ind = randi(100,[1,100]);
+ind2 = find(p_h_n_harm < 1.8 & p_h_n_harm > 1.7);
+ind2 = ind2(randi(numel(ind2),[1,10]));
+p_h_n_harm2plot = [p_h_n_harm(ind), p_h_n_harm(ind2), min(p_h_n_harm) max(p_h_n_harm)];
+p_h_n_harm2plot = p_h_n_harm2plot(~isnan(p_h_n_harm2plot));
 
-plot(ones(1,numel(p_h_1_harm))*1,p_h_1_harm,'.','Markersize',50,'Color',pl_color('1-harm'))
-hold on
-plot(ones(1,numel(p_h_n_harm))*1.5,p_h_n_harm,'.','Markersize',50,'Color',pl_color('n-harm'))
-plot(ones(1,numel(p_h_stoch))*2,p_h_stoch,'.','Markersize',50,'Color',pl_color('stoch'))
+plotSpread({p_h_1_harm, p_h_n_harm2plot, p_h_stoch},...
+    'xNames',{'1-harmonic','n-harmonic','stochastic'},...
+    'spreadWidth',0.2,'yLabel','{\itp}_{fit}','distributionColors',{'black','black','black'})
 
-ylim([0.5 2])
-xlim([0.5 2.5])
-xticks([1 1.5 2])
-xtickangle(15)
-xticklabels({'harmonic','n-harmonic','stochastic'})
-ylabel('{\itp}')
-
-
+hold on;
 plot_set_2x2;
-legend off;
-
-
-
-
-
-
-figure;
-plot(ones(1,numel(p_l_1_harm))*1,p_l_1_harm,'.','Markersize',50,'Color',pl_color('1-harm'))
-hold on
-plot(ones(1,numel(p_l_n_harm))*1.5,p_l_n_harm,'.','Markersize',50,'Color',pl_color('n-harm'))
-plot(ones(1,numel(p_l_stoch))*2,p_l_stoch,'.','Markersize',50,'Color',pl_color('stoch'))
-ylim([0.5 2])
-xlim([0.5 2.5])
-
-xticks([1 1.5 2])
+xlim([0.5 3.5])
+legend off
 xtickangle(15)
-xticklabels({'harmonic','n-harmonic','stochastic'})
-
-ylabel('{\itp}')
-
-plot_set_2x2;
 legend off;
-

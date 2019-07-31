@@ -59,8 +59,8 @@ plot(bp*1e-9,Sp,'Linewidth',4,'Color',pl_color('MC'));
 hold on
 plot(bd*1e-9,Sd,'Linewidth',4,'Color',pl_color('1-harm'))
 
-xlabel('{\itb} [ms/Î¼m^2]')
-ylabel('S')
+xlabel('{\itb} [ms/µm^2]')
+ylabel('S [a.u.]')
 legend('Monte Carlo','Gaussian approximation')
 plot_set_2x2;
 

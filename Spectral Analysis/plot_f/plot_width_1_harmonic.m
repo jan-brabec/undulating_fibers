@@ -1,4 +1,5 @@
 clf
+clear all
 addpath('../res')
 addpath('../SA_functions')
 
@@ -49,7 +50,6 @@ for c_exp = 1:15
     f_delta_est_1_harm(c_exp) = sa_est_f_delta(d_omega,f);
     f_delta_pred_1_harm(c_exp) = sa_pred_f_delta_1_harm(D0,a,T);
     
-    
     if (0) %debug
         clf;
         D_hi_est = sa_est_D_hi(d_omega,f);
@@ -63,7 +63,6 @@ for c_exp = 1:15
 
         pause;
     end
-    
     
 end
 
@@ -84,6 +83,5 @@ plot_set_1x3;
 legend off
 
 
-
-
+R = corrcoef(f_delta_pred_1_harm,f_delta_est_1_harm)
 

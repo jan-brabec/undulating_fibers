@@ -22,7 +22,6 @@ for c_case = 1:15
         case 5
             load 'res_1_50.mat'
             
-            
         case 6
             load 'res_2_10.mat'
         case 7
@@ -65,10 +64,12 @@ ylim([0 1.1])
 
 yticks([0 0.5 1])
 xticks([0 0.5 1])
-ylabel('Estimated {\itD}_{hi} [Î¼m^2/ms]')
-xlabel('Predicted {\itD}_{hi} [Î¼m^2/ms]')
+ylabel('Estimated {\itD}_{hi} [µm^2/ms]')
+xlabel('Predicted {\itD}_{hi} [µm^2/ms]')
 
 plot_set_1x3;
 legend off;
+
+R = corrcoef(D_hi_pred*1e9,D_hi_est*1e9)
 
 

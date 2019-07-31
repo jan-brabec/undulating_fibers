@@ -47,4 +47,6 @@ xticks([0 0.5 1])
 plot_set_1x3;
 legend off;
 
+R = corrcoef(D_hi_pred_n_harm*1e9,D_hi_est_n_harm*1e9)
+
 

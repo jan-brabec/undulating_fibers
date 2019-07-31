@@ -33,10 +33,8 @@ for c_case = 1:7
     D0 = 1.7e-9;
 
     f_delta_est_stoch(c_case)  = sa_est_f_delta(d_omega,f);
-    
     f_delta_pred_stoch(c_case) = sa_pred_f_delta_stoch(D0,a,x,y);
     
-   
      if (0) %debug
         clf;
         D_hi_est = sa_est_D_hi(d_omega,f);
@@ -51,8 +49,6 @@ for c_case = 1:7
         pause;
     end
     
-    
-    
 end
 
 clf;
@@ -66,14 +62,15 @@ ylim([0 100])
 yticks([0 50 100])
 xticks([0 50 100])
 
-% ylabel('Estimated {\itf_{\Delta}} [Hz]')
-% xlabel('Predicted {\itf_{\Delta}} [Hz]')
+% ylabel('Estimated {\itf_{\Delta}}')
+xlabel('Predicted {\itf_{\Delta}}')
 
 plot_set_1x3;
 
 legend off;
 
 
+R = corrcoef(f_delta_pred_stoch,f_delta_est_stoch)
 
 
 

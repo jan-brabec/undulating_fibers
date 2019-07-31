@@ -24,13 +24,13 @@ for c_case=1:4
     
     switch c_case
         case 1
-            load res_MC_par_1e6_harmonic_1_10.mat
+            load res_MC_par_1e6_harmonic_1_10_1e-5.mat
         case 2
-            load res_MC_par_1e6_harmonic_1_50.mat
+            load res_MC_par_1e6_harmonic_1_50_1e-5.mat
         case 3
-            load res_MC_par_1e6_harmonic_3_10.mat
+            load res_MC_par_1e6_harmonic_3_10_1e-5.mat
         case 4
-            load res_MC_par_1e6_harmonic_3_50.mat
+            load res_MC_par_1e6_harmonic_3_50_1e-5.mat
     end
     mc_dt = mss.ac.dt;
     mc_phi = phi_all;
@@ -79,7 +79,7 @@ for c_case=1:4
         
         clf
         drawnow;
-        title(dif(c_case,j))
+%         title(dif(c_case,j))
         hold on
         plot(bp*1e-9,Sp,'Linewidth',4,'Color',pl_color('MC'));
         hold on

@@ -17,6 +17,7 @@ f_delta_est = [];
 f_delta_pred = [];
 D_hi_pred = [];
 
+c_true = 0;
 
 for c_rep = 1:rep
     
@@ -55,6 +56,9 @@ for c_rep = 1:rep
     end
 
 d_omega_avg = sa_n_harm_from_1_harm_distrib(a,T,D0,f);
+
+c_true = c_true + 1;
+d_omega_avd_s(c_true,:) = d_omega_avg;
 
 % Estimating
 D_hi_est(c_rep) = sa_est_D_hi(d_omega_avg,f);

@@ -21,7 +21,6 @@ for c_case = 1:size(ps_q,1)
 end
 
 
-
 if (1)
     figure
     plot(f,ps_q(1:3,:),'Linewidth',4,'Color',pl_color('1-harm'))
@@ -45,14 +44,14 @@ if (1)
     for c_case = 1:4
         
         figure;
-       
+        
         if c_case == 4
             color = pl_color('extra');
         else
             color = pl_color('1-harm');
         end
         
-        plot(t*1e3,grads(c_case,:)*1e3,'Linewidth',4,'Color',color)
+        plot(t*1e3,grads(c_case,:)*1e3,'Linewidth',4,'Color','red')
         xlim([-5 100])
         ylim([-100 100])
         
@@ -60,9 +59,9 @@ if (1)
             ylabel('|g({\itt})| [mT/m]')
             xlabel('{\itt} [ms]');
         else
-            set(gca,'Xticklabel',[]) 
-            set(gca,'Yticklabel',[]) 
-        end        
+            set(gca,'Xticklabel',[])
+            set(gca,'Yticklabel',[])
+        end
         
         set(gcf,  'Position', [1 1 245 238]);
         set(gca,  'Position', [0.432 0.346 0.473 0.579]);

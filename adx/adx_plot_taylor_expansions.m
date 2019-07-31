@@ -1,4 +1,4 @@
-c_case = [1,15];
+c_case = [1,5];
 
 for c_case = c_case
     
@@ -14,10 +14,10 @@ for c_case = c_case
         mx = max(max(max(ps_q(:,:,:))));
         lmx= max(ps_q(c_case,:,i))+eps;
         
-        if c_case == 1
+        if i < 5
             times = 0.2;
         else
-            times = 0.2;
+            times = 0.1;
         end
         h(1) = area(gs_f,ps_q(c_case,:,i)/lmx * times,'HandleVisibility','off','FaceAlpha',.3,'EdgeAlpha',.3);
         h(1).FaceColor = [0.7 0.7 0.7];
@@ -54,7 +54,7 @@ for c_case = c_case
     
     if c_case == 1
         xlabel('{\itf} [Hz]')
-        ylabel('D({\itf}) [Î¼m^2/ms]; |q^2({\itf})| [a.u]')
+        ylabel('D({\itf}) [µm^2/ms]; |q^2({\itf})| [a.u]')
     end
     plot_set_2x2;
     
