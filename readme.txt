@@ -1,6 +1,8 @@
 # Undulating structures
 Supplementary code to the manuscript: "Time-dependent diffusion in undulating structures: Impact on axon diameter estimation"
 
+This is the version after revision.
+
 Contains 5 main branches:
 1) Analytical: Analytical predictions
 2) Monte Carlo: Monte Carlo simulator of 1D-pathways
