@@ -1,5 +1,5 @@
 # Undulating structures
-Supplementary code to the manuscript: "Time-dependent diffusion in undulating structures: Impact on axon diameter estimation"
+Supplementary code to the manuscript: "Time-dependent diffusion in undulating fibers: Impact on axon diameter estimation"
 
 This is the version after revision, see the code after initial submission in releases.
 
