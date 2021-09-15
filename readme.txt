@@ -12,3 +12,9 @@ Contains 6 main branches:
 6) Undulating cylinders: main contributor: Markus Nilson, contact markus.nilsson@med.lu.se for source code.
 
 It is available to offer a tool to simulate own 1D pathways, to replot figures from the manuscript and to potentially verify the code.
+
+
+If you find this useful, please cite:
+*Brabec, J., Lasič, S., & Nilsson, M. (2020).
+Time‐dependent diffusion in undulating thin fibers: Impact on axon diameter estimation.
+NMR in Biomedicine, 33(3), e4187.*
