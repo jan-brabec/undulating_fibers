@@ -15,6 +15,6 @@ It is available to offer a tool to simulate own 1D pathways, to replot figures f
 
 
 If you find this useful, please cite:
-*Brabec, J., Lasič, S., & Nilsson, M. (2020).*
-*Time‐dependent diffusion in undulating thin fibers: Impact on axon diameter estimation.*
-*NMR in Biomedicine, 33(3), e4187.*
+Brabec, J., Lasič, S., & Nilsson, M. (2020).
+Time‐dependent diffusion in undulating thin fibers: Impact on axon diameter estimation.
+NMR in Biomedicine, 33(3), e4187.
