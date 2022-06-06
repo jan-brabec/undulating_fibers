@@ -7,10 +7,10 @@
 * Package contains 6 branches:
    1. Analytical: Analytical predictions
    2. Monte Carlo: Monte Carlo simulator of 1D-pathways
-3. Gaussian Sampling: Gaussian sampling simulator of 1D-pathways
-4. Spectral Analysis: Spectral analysis toolkit that contains also plot functions used in the manuscript
-5. adx: ActiveAx implementation (main contributor: Markus Nilsson)
-6. Undulating cylinders: main contributor: Markus Nilson, contact markus.nilsson@med.lu.se for source code.
+   3. Gaussian Sampling: Gaussian sampling simulator of 1D-pathways
+   4. Spectral Analysis: Spectral analysis toolkit that contains also plot functions used in the manuscript
+   5. adx: ActiveAx implementation (main contributor: Markus Nilsson)
+   6. Undulating cylinders: main contributor: Markus Nilson, contact markus.nilsson@med.lu.se for source code.
 
 * Analyzed using *MATLAB 2018a*.
 
