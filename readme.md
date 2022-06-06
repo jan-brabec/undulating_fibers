@@ -5,8 +5,8 @@
 * The code is made available to offer a tool to simulate own 1D pathways, replot figures from the article but also to verify the code.
 
 * Package contains 6 branches:
-1. Analytical: Analytical predictions
-2. Monte Carlo: Monte Carlo simulator of 1D-pathways
+⋅⋅1. Analytical: Analytical predictions
+⋅⋅2. Monte Carlo: Monte Carlo simulator of 1D-pathways
 3. Gaussian Sampling: Gaussian sampling simulator of 1D-pathways
 4. Spectral Analysis: Spectral analysis toolkit that contains also plot functions used in the manuscript
 5. adx: ActiveAx implementation (main contributor: Markus Nilsson)
