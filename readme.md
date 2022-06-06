@@ -1,6 +1,6 @@
 # Article: Time‐dependent diffusion in undulating thin fibers: Impact on axon diameter estimation
 
-* Code to the article: **Brabec, J., Lasič, S. and Nilsson, M., 2020. Time‐dependent diffusion in undulating thin fibers: Impact on axon diameter estimation. NMR in Biomedicine, 33(3), p.e4187.**
+* Code to the article: **Brabec, J., Lasič, S. and Nilsson, M., 2020. Time‐dependent diffusion in undulating thin fibers: Impact on axon diameter estimation. NMR in Biomedicine, 33(3), p.e4187.-[[Article in HTML]](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/abs/10.1002/nbm.4187)-[[Article in PDF]](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/nbm.4187)-**
 
 * The code is made available to offer a tool to simulate own 1D pathways, replot figures from the article but also to verify the code.
 
